@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #28a745;
+}
+
+/* Simplified Animation */
+.navbar-collapse {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+
+/* Dark-themed collapse button */
+.navbar-toggler-icon {
+    background-color: #333; /* Dark background color for toggler icon */
+    border: 1px solid #fff; /* White border color for toggler icon */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Remove focus outline */
+}

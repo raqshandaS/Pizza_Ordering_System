@@ -1,0 +1,70 @@
+/* MenuContainer.css */
+
+.container {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeInUp 0.5s ease-in-out; /* Animation for container */
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-select,
+.form-control {
+    background-color: #555; /* Darker background for form elements */
+    color: #fff;
+}
+
+.menu-list {
+    margin-top: 20px;
+}
+
+/* For filter and search section */
+
+.filter-search-container {
+    padding: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-search-container label {
+    margin-right: 10px;
+}
+
+.filter-search-container .form-select,
+.filter-search-container .form-control {
+    min-width: 0; /* Allow elements to shrink */
+    flex: 1; /* Distribute remaining space equally */
+}
+
+.filter-search-container .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.filter-search-container .form-select,
+.filter-search-container .form-control {
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.filter-search-container .form-select:focus,
+.filter-search-container .form-control:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 0 0.15rem rgba(23, 162, 184, 0.25);
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

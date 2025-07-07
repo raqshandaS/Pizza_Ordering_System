@@ -1,0 +1,130 @@
+/* MenuItemDetail.css */
+
+.menu-item-detail-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item-detail-container:hover {
+    transform: scale(1.05);
+}
+
+.menu-item-detail-img {
+    width: 50%;
+    max-height: 300px;
+    object-fit:scale-down;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item-detail-img:hover {
+    transform: scale(1.1);
+}
+
+.size-select {
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.size-select:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.quantity-btn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.quantity-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* MenuItemDetail.css */
+
+.toppings-section {
+    margin-bottom: 20px;
+}
+
+.topping-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.topping-item {
+    display: inline-flex;
+    align-items: center;
+}
+
+.topping-checkbox {
+    display: none;
+}
+
+.topping-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.topping-label.long {
+    width: calc(10px + var(--topping-length, 0) * 10px);
+    min-width: 100px;
+}
+
+.topping-label:hover {
+    background-color: #555;
+}
+
+.topping-checkbox:checked + .topping-label {
+    background-color: #28a745;
+}
+
+.topping-checkbox:checked + .topping-label .topping-name {
+    opacity: 0.8;
+}
+
+.topping-name {
+    margin: 5px;
+    margin-left: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
